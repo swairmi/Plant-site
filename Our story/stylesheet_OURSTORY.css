@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Cardo|Permanent+Marker');
+/******font-family: 'Permanent Marker', cursive;
+font-family: 'Cardo', serif;********/
+
+
+/********************UNIVERSAL SELECTORS***************************/
+body{font-family: 'Open Sans', sans-serif; font-weight: 400;
+max-width:100%;
+max-height:100%;
+min-width:100%;
+min-height:100%;}
+
+p{font-size:15px; font-family: 'Cardo', serif;}
+h1{ font-size:25px; font-family: 'Permanent Marker', cursive; margin-top:19%; margin-left:40%; font-size:50px; color:white;}
+h2{color:#667a24; font-size:30px; font-family: 'Permanent Marker', cursive; text-align:right; margin-top:20%; font-size:60px;} /***FIRST SECTION***/
+h3{color:#667a24; font-size:30px; font-family: 'Permanent Marker', cursive;}
+h4{color:#667a24;  font-size:30px; font-family: 'Permanent Marker', cursive;}
+h5{color:#667a24;  font-size:30px; font-family: 'Permanent Marker', cursive; margin-bottom:50px;}
+h6{color:#667a24;  font-size:30px; font-family: 'Permanent Marker', cursive;}
+
+a:link{color:#667a24;}
+a:visited{color:#667a24;}
+a:active{color:purple;}
+a{color: #667a24;}
+
+hr{width:100px; }
+
+li{list-style-type: none;}
+header{background:linear-gradient(
+    rgba(255, 255, 255, 0.25),
+      rgba(201, 220, 137, 0.35),
+      rgba(255, 255, 255, 0.25)
+    ), url('main_banner.jpg') no-repeat center;
+background-size:100% 100%;
+height: 500px; background:contain; margin-bottom: 50px;}
+nav{margin-left:7%; padding-top:2%;}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+/*******************FIRST SECTION - TOP BANNER**************************/
+
+#menu_changer:hover{animation: linear 0.5s thechanger forwards; font-size:1px;}
+@keyframes thechanger {
+  0%{background-color:#667a24; color:white;}
+  100%{background-color:rgb(228, 237, 196); color:darkgreen;}
+}
+.nav_content{font-size: 14px; padding-top: 15px;}
+
+
+
+.box { 
+    position: relative;
+    float:left;
+    background-color:#667a24;
+    color:white; 
+    width:150px;
+    height:50px;
+    margin-right:5px;
+    text-align: center;
+    border:solid black 2px;
+}
+.box.animated { 
+    -moz-animation: bounce 1s;
+    -webkit-animation: bounce 1s;
+    animation: bounce 1s;
+}
+@keyframes bounce {
+    0% {
+      top: 0;
+      animation-timing-function: ease-out;}
+    17% {
+      top: 15px;
+      animation-timing-function: ease-in;}
+    34% {
+      top: 0;
+      animation-timing-function: ease-out;}
+    51% {
+      top: 8px;
+      animation-timing-function: ease-in;}
+    68% {
+      top: 0px;}
+    85% {
+      top: 3px;
+      animation-timing-function: ease-in;}
+    100% {
+      top: 0;}
+}
+
+
+
+
+/*******************FIRST SECTION - TOP BANNER**************************/
+.first_section{ margin-top:100px; margin-bottom:150px;}
+.first_section_desc{}
+
+.main_section_title{font-size:30px; margin-bottom:40px;}
+
+#thewoman_picture{margin-top:10%;} 
+#theman_picture{margin-top:50%;}
+.theman{height:339px; width:339px; position: absolute;}
+.thewoman{height:339px; width:339px; position: absolute; z-index:1; left:25%; bottom: 1%;}
+/*******************FIRST SECTION - TOP BANNER**************************/
+
+
+
+
+
+/*******************SECOND SECTION - MAIN CONTENT**************************/
+.second_section{margin-bottom:50px; margin-top:50px;}
+/*******************SECOND SECTION - MAIN CONTENT**************************/
+
+
+
+
+
+/*******************THIRD SECTION - "OUR MISSION..."**************************/
+.thrid_section{margin-top:50px; margin-bottom:50px;}
+.cactus_banner{height:463px; width:1130px;}
+
+.product_exam_one{height:356px; width:356px; }
+.product_exam_two{height:356px; width:356px; }
+.product_exam_three{height:356px; width:356px;}
+
+svg{height:463px; width:770px; position: absolute; z-index:1; bottom:0px; left:65%;}
+#cactus_banner_content{z-index:2; bottom:0%; right:10%;}
+
+.our_mission_desc{text-align: right; color: grey;}
+
+/*******************THIRD SECTION - "OUR MISSION..."**************************/
+
+
+
+
+
+/*******************FOURTH SECTION - PRODUCT EXAMPLES**************************/
+.fourth_section{margin-top:50px; margin-bottom:50px;}
+
+.footer_sale_one{height:545px; width:545px;}
+.footer_sale_two{width:545px; height:545px;}
+/*******************FOURTH SECTION - PRODUCT EXAMPLES**************************/
+
+
+
+
+/*******************FITH SECTION - "HANDMADE WITH LOVE..."**************************/
+.fith_section{margin-top: 50px; margin-bottom:50px;}
+
+.foot_option_one{height:40px; width:80px; background-color:grey; color:white;}
+.foot_option_two{height:40px; width:80px; background-color:green; color:white;}
+.foot_option_three{height:40px; width:80px; background-color:black; color:white;}
+/*******************FITH SECTION - "HANDMADE WITH LOVE..."**************************/
+
+
+
+
+/*******************SIXTH SECTION - MAP/LOCATION**************************/
+.themap{height:310px; width:1000px;}
+#map_content{background-color: rgba(102, 122, 36, 0.4);}
+/*******************SIXTH SECTION - MAP/LOCATION**************************/
+
+
+
+
+
+/*******************EIGHTH SECTION - "FOOTER"**************************/
+.footer_lgog_phoenix{}
+#quick_links_links{}
+
+.footer_logo_phoenix{width:134px; height:25px; text-align: center;}
+.footer_titles{font-size:25px;}
+
+      .fa-twitter{margin-right: 10px;}
+      .fa-facebook-f{margin-right:10px;}
+      .fa-youtube{margin-right: 10px;}
+      .fa-pinterest{margin-right: 10px;}
+      .fa-instagram{margin-right: 10px;} 
+
+#quick_links_specialties{}
+/*******************EIGHTH SECTION - "FOOTER"**************************/
