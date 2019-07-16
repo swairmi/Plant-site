@@ -1,0 +1,554 @@
+/*
+Theme Name: Twenty Thirteen
+Theme URI: http://wordpress.org/themes/twentythirteen
+Author: the WordPress team
+Author URI: http://wordpress.org/
+Description: The 2013 theme for WordPress takes us back to the blog, featuring a full range of post formats, each displayed beautifully in their own unique way. Design details abound, starting with a vibrant color scheme and matching header images, beautiful typography and icons, and a flexible layout that looks great on any device, big or small.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: twentythirteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+
+
+
+/********************UNIVERSAL SELECTORS***************************/
+body{font-family: 'Open Sans', sans-serif; font-weight: 400;
+max-width:100%;
+max-height:100%;
+min-width:100%;
+min-height:100%;}
+
+p{font-size:15px; font-family: 'Cardo', serif;}
+h1{ font-size:25px; font-family: 'Permanent Marker', cursive; margin-top:25%; margin-left:80%; font-size:40px; color:white;}
+h2{color:#667a24; font-size:30px; font-family: 'Permanent Marker', cursive;} /***FIRST SECTION***/
+h3{color:#667a24; font-size:30px; font-family: 'Permanent Marker', cursive;}
+h4{color:#667a24;  font-size:30px; font-family: 'Permanent Marker', cursive;}
+h5{color:#667a24;  font-size:30px; font-family: 'Permanent Marker', cursive; margin-bottom:50px;}
+h6{color:#667a24;  font-size:30px; font-family: 'Permanent Marker', cursive;}
+
+
+a:link{color:#667a24;}
+a:visited{color:#667a24;}
+a:active{color:purple;}
+a{color: #667a24;}
+
+hr{width:100px; }
+
+li{list-style-type: none;}
+header{background:linear-gradient(
+    rgba(255, 255, 255, 0.25),
+      rgba(201, 220, 137, 0.35),
+      rgba(255, 255, 255, 0.25)
+    ), url('plants-top-banner.jpg') no-repeat center;
+height: 500px; background:contain; margin-bottom: 50px;}
+nav{margin-left:7%; padding-top:2%;}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+/**************************PARTICLE SETTINGS*************/
+canvas { display: block; vertical-align: bottom; }
+#particles-js{  position:absolute; width: 100%; height:100%; 
+  background-repeat: no-repeat; 
+  background-size: 20%; 
+  background-position: 50% 50%; }
+
+
+  #particles-js-two{  position:absolute; width: 100%; height:100%; 
+  background-repeat: no-repeat; 
+  background-size: 20%; 
+  background-position: 50% 50%; }
+
+
+/**************************PARTICLE SETTINGS*************/
+
+
+/*********************NAV BAR / TOP BANNER**************************/
+.the_top_banner{
+	background-image: url('plants-top-banner.jpg');
+}
+
+
+#menu_changer:hover{animation: linear 0.5s thechanger forwards; font-size:1px;}
+@keyframes thechanger {
+  0%{background-color:#667a24; color:white;}
+  100%{background-color:rgb(228, 237, 196); color:darkgreen;}
+}
+.nav_content{font-size: 14px; padding-top: 15px;}
+
+
+
+.box { 
+    position: relative;
+    float:left;
+    background-color:#667a24;
+    color:white; 
+    width:150px;
+    height:50px;
+    margin-right:5px;
+    text-align: center;
+    border:solid black 2px;
+}
+.box.animated { 
+    -moz-animation: bounce 1s;
+    -webkit-animation: bounce 1s;
+    animation: bounce 1s;
+}
+@keyframes bounce {
+    0% {
+      top: 0;
+      animation-timing-function: ease-out;}
+    17% {
+      top: 15px;
+      animation-timing-function: ease-in;}
+    34% {
+      top: 0;
+      animation-timing-function: ease-out;}
+    51% {
+      top: 8px;
+      animation-timing-function: ease-in;}
+    68% {
+      top: 0px;}
+    85% {
+      top: 3px;
+      animation-timing-function: ease-in;}
+    100% {
+      top: 0;}
+}
+/**********************************************/
+
+
+
+/***************FIRST SECTION - "BIT MORE GREEN...."*******************/
+.first_section{width:100%; margin-bottom:50px; margin-top:10px;}
+.first_section_picture{width:430px; height:351px;}
+.first_section_text_one{padding-top: 30px; color:grey;}
+.first_section_text_two{color: grey;}
+/***********************************************/
+
+
+
+
+/*********************SECOND SECTION - "PLANTS ARE OUR PASSION"***************************/
+.second_section{padding-top:30px; margin-bottom:100px;}
+
+#second_section_content{margin-top: 100px;}
+
+.second_section_text{padding-top:20px; color:grey;}
+
+.second_section_first_picture{width:366px; height:490;}
+.second_section_second_picture{width:366px; height:366px; position: absolute; right:5%; top:10%;}
+/***********************************************/
+
+
+
+
+/*********************THIRD SECTION - "QOUTE BANNER"************************/
+.third_section{text-align:center; margin-bottom: 100px; border:solid green 2px; position: relative; background-color:rgba(102, 122, 36, 0.4);}
+.theqoutebanner{ height:150px; padding-top:50px; color:#667a24; font-size:20px; width:1100px;}
+/***********************************************/
+
+
+
+
+
+/********************RELATED ITEMS FOR SALE*************************/
+.related_title{text-align:center; margin-top:100px;}
+
+
+.section_four_main{text-align: center;}
+.section_four_main_desc{text-align: center; margin-bottom: 50px;}
+
+#numberbanner{position: relative; z-index:2;}
+
+
+.product_letter_overlay{}
+#letterbanner{position: relative; z-index:2;}
+
+
+#thatguy:hover{animation: linear 0.5s in forwards }
+#thatguy{animation: linear 0.5s out forwards }
+@keyframes in{
+  0%{transform: rotate(0deg);}
+  50%{transform: rotateY(90deg);}
+  100%{transform: rotateY(90deg);}}
+@keyframes out{
+  0%{transform: rotateY(90deg);}
+  50%{transform: rotateY(90deg);}
+  100%{transform: rotate(0deg);}}
+.scene {
+  width: 150px;
+  height: 150px;
+  perspective: 1000px;}
+.cube {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;}
+#cube_sides {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  color:white;
+  text-align: center;}
+.cube_pictures{height:150px; width:150px;}
+
+.cube_face_front{transform: rotateY(0deg) translateZ(75px); background-color:red; width:100px; height:100px;}
+.cube_face_left{transform: rotateY(-90deg) translateZ(75px); background-color:#667a24; width:100px; height:100px;}
+.cube_face_right{transform:rotateY(90deg) translateZ(75px); background-color:orange; width:100px; height:100px;}
+.cube_face_back{transform: rotateY(180deg) translateZ(75px); background-color:blue; width:100px; height:100px;}
+.cube_face_bottom{transform: rotateY(-90deg) translateZ(75px); width:100px; height:100px;}
+.cube_face_top{transform: rotateY(90deg) translateZ(75px); background-color:aqua; width:100px; height:100px;}
+
+.button_letter{background-color:#9f8d76; border:solid 2px grey; color:white; width:100%; height:50px;}
+#letterbutton:hover{animation:linear 0.5s buttonchanger forwards;}
+@keyframes buttonchanger{
+  0%{background-color: #9f8d76; color:white}
+  100%{background-color:#f2f2f2; color:black;}}
+
+
+.section_four_title{color:white; font-size:20px;}
+.more_options_button{margin-bottom:50px; width: 100%; background-color:transparent; color:white; border:solid white 1px;}
+#more_op_button_changer:hover{animation:linear 0.5s button_changer forwards;}
+@keyframes button_changer{
+  0%{background-color:transparent;}
+  100%{background-color:black; }
+}
+.letter_banner_option_one{background-color:red; height:170px; width:170px; border-radius:50px; position:relative; bottom:495px; right:17px;}
+#letterbanner_popup{background-color:red; height:170px; width: 10px; border-radius:50px; position: relative; bottom:360px; right:20px;}
+
+
+.section_four_title_cactus{color: white; font-size:20px; padding-top:30px; padding-bottom: 15px;}
+
+
+@keyframes pleaeworl{
+  0%{margin-bottom: 0px;}
+  100%{margin-bottom: 1000px;}
+}
+
+#thisuywors{animation:linear 1s pleaeworl forwards ;}
+#second_row{margin-bottom:120px; margin-top:50px;}
+#third_row{ margin-bottom: 120px; }
+#fourth_row{margin-top: 120px;}
+#fith_row{margin-bottom: 120px; }
+#sixth_row{margin-bottom: 120px;}
+#seventh_row{margin-bottom: 120px;}
+
+
+
+
+@keyframes margin_mover{
+  0%{margin-bottom:0px;}
+  50%{margin-bottom: 60px}
+  100%{margin-bottom: 120px;}
+}
+.product_one_changer{animation:linear margin_mover 1s forwards;}
+.product_one_sideface{padding-top:10px;}
+.button_more_options_productONE{margin-top:10px;}
+
+.product_two_changer{animation:linear margin_mover 1s forwards;}
+.product_two_sideface{padding-top:10px;}
+.button_more_options_productTWO{margin-top: 10px;}
+
+.product_three_changer{animation: linear margin_mover 1s forwards;}
+.product_three_sideface{padding-top:10px;}
+.button_more_options_productTHREE{margin-top: 10px;}
+
+.product_four_changer{animation:linear margin_mover 1s forwards;}
+.product_four_sideface{padding-top:10px;}
+.button_more_options_productFOUR{margin-top:10px;}
+
+
+.product_five_changer{animation:linear margin_mover 1s forwards;}
+.product_five_sideface{padding-top:10px;}
+.button_more_options_productFIVE{margin-top: 10px;}
+
+.product_six_changer{animation: linear margin_mover 1s forwards;}
+.product_six_sideface{padding-top:10px;}
+.button_more_options_productSIX{margin-top: 10px;}
+
+
+
+
+
+
+
+
+
+
+.selector_box_productONE{animation:linear growguy 0.7s forwards;}
+.selector_box_productTWO{animation:linear growguy 0.7s forwards;}
+.selector_box_productTHREE{animation:linear growguy 0.7s forwards;}
+.selector_box_productFOUR{animation:linear growguy 0.7s forwards;}
+
+.selector_box_productFIVE{animation:linear growguy 0.7s forwards;}
+.selector_box_productSIX{animation:linear growguy 0.7s forwards;}
+@keyframes growguy{
+0%{height:0px; background-color: white; }
+50%{background-color: white;  height:0px; }
+100%{height:88px; background-color:#839449;}
+}
+#selector_box_productONE_mover{height:5px; width:100%; background-color:white; padding-top:10px;}
+#selector_box_productTWO_mover{height:5px; width:100%; background-color:white; padding-top:10px;}
+#selector_box_productTHREE_mover{height:5px; width:100%; background-color:white; padding-top:10px;}
+#selector_box_productFOUR_mover{height:5px; width:100%; background-color:white; padding-top:10px;}
+
+#selector_box_productFIVE_mover{height:5px; width:100%; background-color:white; padding-top:10px;}
+#selector_box_productSIX_mover{height:5px; width:100%; background-color:white; padding-top:10px;}
+
+
+
+
+/********************FITH SECTION - "BIODOME CHANGER"****************************/
+#product_seperator{width:100%;}
+.section_five{margin-bottom: 50px; margin-top:50px;}
+
+.biodome_names{color:grey;}
+.biodome_price{color:grey; font-size:30px;}
+.biodome_content{color:grey;}
+.biodome_width{color: grey;}
+
+#center_options{text-align:center;}
+.option_one{border:solid rgba(128,128,128, 0.4) 0.5px; 
+  background-color:transparent; width:150px; height:45px; color:black;}
+.option_two{border:solid rgba(128,128,128, 0.4) 0.5px;  
+  background-color: transparent; width:150px; height:45px; color:grey;}
+.option_three{border:solid rgba(128,128,128, 0.4) 0.5px; 
+  background-color: transparent; width:150px; height:45px; color:white;}
+
+
+#optionchanger:hover{animation: linear 0.5s borderchanger forwards}
+@keyframes borderchanger{
+  0%{border:solid rgba(128,128,128, 0.4) 0.5px}
+  100%{border:solid rgba(0, 0, 0) 3px;}
+}
+
+
+#biodomes_whitemarble{position: absolute; z-index: 1; 
+    top: calc(50% + -300px); left: calc(50% - 300px); opacity:0;}
+
+#biodomes_concrete{position: absolute; z-index: 1; 
+    top: calc(50% + -300px); left: calc(50% - 300px); opacity:0;}
+
+#biodomes_blackmarble{position: absolute; z-index: 1; 
+    top: calc(50% + -300px); left: calc(50% - 300px); opacity:0;}
+
+
+.borderchanger:hover{animation: linear 0.5s blackmarbleborder forwards}
+@keyframes blackmarbleborder{
+	0%{border:solid rgba(128,128,128, 0.4) 0.5px}
+	100%{border:solid rgb(191, 191, 191) 3px;}
+}
+
+
+#center_counter{text-align:center; margin-top:15px; margin-bottom:15px; margin-left:5%; }
+.counter_up{height:50px; width:50px; font-size:30px; color:grey; background-color:transparent; border: none;}
+.inputcounter{height:50px; text-align:center; font-size:30px; color:grey; background-color:transparent; border:solid 0.1px grey;}
+.counter_down{height:50px; width:50px; font-size:30px; color:grey; background-color:transparent; border: none;}
+#upcount:hover{animation:linear 0.5s counters forwards;}
+#downcount:hover{animation:linear 0.5s counters forwards }
+@keyframes counters{
+  0%{color:grey; background-color: transparent;}
+  100%{color:white; background-color:rgba(102, 122, 36, 0.4);}
+}
+
+
+.mySlides{margin-top:50px;}
+#hergarden{margin-top: 40px;}
+
+
+#center_buyit_cart{text-align:center; margin-left:10px;}
+#change-image{position: absolute; z-index: 1; top: calc(50% + -300px); left: calc(50% - 300px); width:100%;}
+.section_five_cartbutton{background-color:transparent; color:#667a24; height:45px; width:250px;}
+.section_five_buyitbutton{background-color:transparent; color:#667a24; height:45px; width:250px;}
+#section_five_addtocart:hover{animation:linear 0.5s buttonactions forwards}
+#section_five_buyitnow:hover{animation:linear 0.5s buttonactions forwards}
+@keyframes buttonactions{
+  0%{background-color:transparent; color:#667a24;}
+  100%{background-color:#667a24; color:white;}
+}
+
+.position-relative{position: relative;}
+.change_one{position: absolute; top:0; left:0; width:600px; height:600px;}
+.change_one:nth-child(2){display: none;}
+.change_one:nth-child(3){display: none;}
+.change_one:nth-child(4){display: none;}
+
+
+.concretebiodome{width:595px; height:595px;}
+
+.concrete_texture{background-image:url("concrete_tex.jpg"); }
+.marble_texture{background-image:url("marble_texture.jpg");}
+.blackmarble_texture{background-image:url("blackmarble_texture.jpg");}
+/********************FITH SECTION - "BIODOME CHANGER"****************************/
+
+
+
+/**********************SIXTH SECTION - "MINI HERB GREENHOUSE"****************************/
+.section_five_5{}
+#herbythehouse{}
+.position-relative{}
+
+.change_two{position: absolute; top: 0; left:0; width:600px; height:600px;}
+.change_two:nth-child(2){display: none;}
+.change_two:nth-child(3){display: none;}
+
+
+
+
+#product_selector{margin-left: 40%;}
+
+.change_two_left{background-color:transparent; color:#667a24; border:solid 1px #667a24;}
+.change_two_right{background-color:transparent; color:#667a24; border:solid 1px #667a24;}
+#product_changer:hover{animation:linear 0.5s product_selector forwards;}
+@keyframes product_selector{
+  0%{background-color:transparent; color:#667a24; border:solid 1px #667a24;}
+  100%{background-color:#667a24; color:white; border:solid 1px white;}
+}
+/**********************SIXTH SECTION - "MINI HERB GREENHOUSE"****************************/
+
+
+
+
+/*******************SEVENTH SECTION - "VIP MAIL LIST"**************************/
+.section_six{margin-top:100px;  width: 100%;}
+
+#vipimage{height:404px; width:580px;
+  background-attachment: fixed;
+ background-position:100% 100%;
+ background-repeat: no-repeat;
+ text-align: center;
+ margin:auto;
+ padding:0;
+ background-size: cover;
+
+ background-image:url('couple_atplants.jpg');
+ position: relative;
+}
+
+#vip_list_content{text-align: center; margin-top:60px;}
+.vip_input{margin-top:50px;}
+
+#vip_button_mover:hover{animation:linear 0.3s viparea forwards;}
+.vip_button{background-color:transparent; color:#667a24;}
+@keyframes viparea{
+	0%{background-color:transparent; color:#667a24;}
+	100%{background-color:rgba(102, 122, 36, 0.4); color:white;}}
+/*******************SEVENTH SECTION - "VIP MAIL LIST"**************************/
+
+
+
+
+/*************************EIGTH SECTION - "SPECIALTY GREEN SERVICES"***********************/
+
+
+#special_image{width:344px; height:344px;}
+.speical_class{text-align:center; margin-top: 150px; margin-bottom:150px;}
+/*************************EIGTH SECTION - "SPECIALTY GREEN SERVICES"***********************/
+
+
+/************************NINTH SECTION - BREAKER BANNER/ CONTACT BANNER****************************/
+.bottom_banner{
+ background-attachment: fixed;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+
+ background-image:url('bottom_banner .jpg');
+ height:500px; width:100%;
+ position: relative;
+}
+
+#bottom_banner_contain{padding:0; background-size: cover; width:100%;}
+
+
+
+.lets_grow_together{width: 500px;}
+.letsgrow_title{margin-bottom: 30px; margin-top: 80px;}
+
+.theplantergif{height:400px; width:400px; margin-left:10%; margin-top:8%;}
+
+
+
+.input_form_contact{width: 450px; height:700px; background-color: white; margin-left:15%; margin-top: 10px; 
+	border: solid 1px black; 
+	padding-top: 30px;
+	position: absolute;}
+.contact_form{width:300px; border:none; margin-left: 30px;}
+
+.contact_textarea{width:400px; height:100px; margin-bottom:20px; margin-left: 25px;}
+.calander_input{background-color: transparent; border: none; margin-left: 30px;}
+.contact_underline{width:400px;}
+.contact_underline_calander{margin-left:25px; width: 400px;}
+.contact_form_warning{text-align: center; padding-left:;}
+.contact_button{width:100px; height:50px; background-color: transparent;}
+#contact_button_mover:hover{animation:linear 0.5s button_contact forwards;}
+@keyframes button_contact{
+  0%{background-color:transparent; color:#667a24;}
+  100%{background-color:#667a24; color:white;}}
+.contact_warning{margin-left: 30px; padding-top: 30px;}
+.text_box_inner{padding-left: 10px;}
+#contact_yesandno{padding-left:30px;}
+/************************NINTH SECTION - BREAKER BANNER/ CONTACT BANNER****************************/
+
+
+/**********************TENTH SECTION - "THE GARDEN BLOG"**************************/
+.section_ten_the_blog{margin-bottom: 80px; margin-top:150px;}
+.section_ten_center{text-align: center;}
+.footer_flowers{width:558px; height:237px; margin-right:20px; overflow: hidden; }
+.flowers_changer:hover{animation:linear 1s footer_picture_better forwards;}
+
+
+.cactuswoman{width:558px; height:237px; margin-left: 10px; overflow: hidden;}
+
+.img-hover-zoom {
+  height: 300px; /* Modify this according to your need */
+  overflow: hidden; /* Removing this will break the effects */
+}
+/**********************TENTH SECTION - "THE GARDEN BLOG"**************************/
+
+
+
+/*******************ELEVENTH SECTION - "FOOTER"**************************/
+.footer_lgog_phoenix{}
+#quick_links_links{}
+
+.footer_logo_phoenix{width:134px; height:25px; text-align: center;}
+.footer_titles{font-size:25px;}
+
+			.fa-twitter{margin-right: 10px;}
+			.fa-facebook-f{margin-right:10px;}
+			.fa-youtube{margin-right: 10px;}
+			.fa-pinterest{margin-right: 10px;}
+			.fa-instagram{margin-right: 10px;} 
+
+#quick_links_specialties{}
+/*******************ELEVENTH SECTION - "FOOTER"**************************/
+
+
+
