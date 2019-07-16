@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pheonix online shop - PRODUCT number</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+
+</head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="product_heart.css" src="product_heart.css">
+<body>
+
+
+<!-------------------NAV BAR / TOP BANER----------------------->
+
+<header>
+	<div class="container">
+		<nav>
+		    <a href="file:///Users/andrewpenn/Desktop/home%20garden%20website%20/Home/plantssite.html"><div class="box" id="menu_changer"><p class="nav_content">HOME</p></div></a>
+		    <a href="file:///Users/andrewpenn/Desktop/home%20garden%20website%20/Shop/shop.html"><div class="box" id="menu_changer"><p class="nav_content">PLANT SHOP</p></div></a>
+		    <a href="file:///Users/andrewpenn/Desktop/home%20garden%20website%20/Services/services.html"><div class="box" id="menu_changer"><p class="nav_content">SERVICES</p></div></a>
+		    <a href="file:///Users/andrewpenn/Desktop/home%20garden%20website%20/Our%20story/ourstory.html"><div class="box" id="menu_changer"><p class="nav_content">OUR STORY</p></div></a>
+		    <a href="file:///Users/andrewpenn/Desktop/home%20garden%20website%20/Blog/blog.html"><div class="box" id="menu_changer"><p class="nav_content">BLOG</p></div></a>
+		    <a href=""><div class="box" id="menu_changer"><p class="nav_content">CONTACT US</p></div></a>
+		</nav>
+</header>
+<!-------------------NAV BAR / TOP BANER----------------------->
+
+
+
+
+
+<!----------------LEFT SIDE PICTURES------------------------>
+<section>
+	
+<div class="container">
+	<div class="row">
+
+
+<!-----RIGHT SIDE----->
+		<div class="col-md-6" id="left_side_pictures">
+			<div class="container">
+
+					<div class="big_images">
+						<img class="preview_big_star1 big_picturechanger" src="heart_big_one.jpg">
+						<img class="preview_big_star2 big_picturechanger" src="planter_frames.gif">
+						<img class="preview_big_star3 big_picturechanger" src="heart_big_three.jpg">
+						<img class="preview_big_star4 big_picturechanger" src="heart_big_four.jpg">
+					</div>
+			</div>
+		
+
+		<div class="container">
+			<div class="row" id="small_images">
+				<div class="col"><div id="prev_changer_one" class="preview_images_one"></div></div>
+				<div class="col"><div id="prev_changer_two" class="preview_images_two"></div></div>
+				<div class="col"><div id="prev_changes_three" class="preview_images_three"></div></div>
+				<div class="col"><div id="prev_changes_four" class="preview_images_four"></div></div>
+			</div>
+			<div class="container"><small class="englargeclicker">^ Click To Enlarge ^</small></div>
+		</div>
+	</div>
+<!-----RIGHT SIDE----->
+
+
+
+<!----LEFT SIDE------>
+		<div class="col-md-6">
+			<p>SUCCULENT GARDENS</p>
+			<h1>Redwood Succulent Heart Kit</h1>
+			<h2>$68.00</h2>
+			<br>
+			<p>These rustic hearts are made by a California artist from reclaimed redwood that is repurposed into unique succulent planters.
+			A perfect DIY gift for a succulent lover.</p>
+			<p>The Small Heart Planter Kit come with 7" redwood heart frame and 6 2" plants plus moss and instructions on how to plant your succulent heart.</p>
+			<p>The medium Redwood Heart Planter Kit comes with an 11" redwood heart frame and 3 4" and 10 2" plants plus moss.</p>
+			<p>For step-by-step instructions on how to plant your redwood heart, take a look at the photos shown here.</p>
+
+
+		<div class="container" id="letter_picker">
+			<div class="row" id="letter_selection">
+				<div class="col"><button id="selection_change" class="letter_sel">SMALL - 7"</button></div>
+				<div class="col"><button id="selection_change" class="letter_sel">MEDIUM - 11"</button></div>
+				<div class="col"></div>
+
+			</div>
+
+			<div class="row">
+				<div class="col-md-8">
+					<div class="counter" id="center_counter">
+						<div class="counter_container">
+							<input class="counter_down" id="downcount" type="button" value="-" onclick="countdown_two();">
+							<input class="inputcounter" id="countguy_two" type="text" value="0">
+							<input class="counter_up" id="upcount" type="button" value="+" onclick="countup_two();">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4"><button id="cart_change" class="add_tocart">ADD TO CART</button></div>
+			</div>
+
+
+			<p class="social_media">Share on this:
+				<a class="twitter_social" href="https://twitter.com/?lang=en-gb"><i class="fab fa-twitter"></i></a>
+				<a class="facebook_social" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+				<a class="youtube_social" href="https://www.youtube.com/?gl=GB&hl=en-GB"><i class="fab fa-youtube"></i></a>
+				<a class="pinterest_social" href="https://www.pinterest.co.uk/"><i class="fab fa-pinterest"></i></a>
+				<a class="instagram_social" href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram"></i></a></p>
+
+
+
+
+
+
+
+		</div>
+<!----LEFT SIDE----->
+
+
+	</div>
+</div>
+
+
+<!---------------------------------------->
+<section class="extra_cubes">
+	<div class="container">
+		<h3 class="related_title">You may also be interested in:</h3>
+		<hr class="related_title_underline">
+		<div class="row" id="the_product_row">
+
+
+
+												<!---NUMBER-->
+				<a href="file:///Users/andrewpenn/Desktop/home%20garden%20website%20/products/number/product_number.html"><div class="col-md-3" id="numberbanner">
+					<div class="product_number_overlay">
+						<div class="scene">
+							<div class="cube" id="thatguy">
+								<div id="cube_sides" class="cube_face_front">
+									<img class="cube_pictures" src="images/number banner.jpg">
+								</div>
+
+								<div id="cube_sides" class="cube_face_bottom"></div>
+
+								<div id="cube_sides" class="cube_face_left">
+									<h3 class="section_four_title">Redwood Succulent Star Planter Kit</h3></a>
+									<button class="button_letter button_more_options_number" id="letterbutton">MORE OPTIONS</button>
+									<div id="selector_box_number_mover">
+										<small><i><i class="fas fa-arrow-down"></i> Click for store page <i class="fas fa-arrow-down"></i></i></small>
+										<b>$139.00</b>
+										<a href="file:///Users/andrewpenn/Desktop/home%20garden%20website%20/products/number/product_number.html"><button class="more_options_button" id="more_op_button_changer">STORE PAGE</button></a>
+									</div>
+								</div>
+
+								<div id="cube_sides" class="cube_face_back"></div>
+								<div id="cube_sides" class="cube_face_right"></div>
+								<div id="cube_sides" class="cube-face_top"></div></a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
+						<!--CACTUS-->
+				<a href="file:///Users/andrewpenn/Desktop/home%20garden%20website%20/products/cactus/product_three_cactus.html"><div class="col-md-3" id="cactusbanner">
+					<div class="product_cactus_overlay">
+						<div class="scene">
+							<div class="cube" id="thatguy">
+								<div id="cube_sides" class="cube_face_front">
+									<img class="cube_pictures" src="images/cactus banner.jpg">
+								</div>
+
+								<div id="cube_sides" class="cube_face_bottom"></div>
+								<div id="cube_sides" class="cube_face_left">
+									<h3 class="section_four_title_cactus">Redwood Cactus Kit</h3></a>
+									<button class="button_letter button_more_options_cactus" id="letterbutton">MORE OPTIONS</button>
+										<div id="selector_box_cactus_mover">
+										<small><i><i class="fas fa-arrow-down"></i> Click for store page <i class="fas fa-arrow-down"></i></i></small>
+										<b>$68.00</b>
+										<a href="file:///Users/andrewpenn/Desktop/home%20garden%20website%20/products/cactus/product_three_cactus.html"><button class="more_options_button" id="more_op_button_changer">STORE PAGE</button></a>
+									</div>
+								</div>
+
+								<div id="cube_sides" class="cube_face_back"></div>
+								<div id="cube_sides" class="cube_face_right"></div>
+								<div id="cube_sides" class="cube-face_top"></div></a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+									<!--STAR--->
+				<a href="file:///Users/andrewpenn/Desktop/home%20garden%20website%20/products/star/product_three_star.html"><div class="col-md-3" id="starbanner">
+					<div class="product_star_overlay">
+						<div class="scene">
+							<div class="cube" id="thatguy">
+								<div id="cube_sides" class="cube_face_front">
+									<img class="cube_pictures" src="images/star banner.jpg">
+								</div>
+
+								<div id="cube_sides" class="cube_face_bottom"></div>
+								<div id="cube_sides" class="cube_face_left">
+									<h3 class="section_four_title">Redwood Succulent Star Planter Kit</h3></a>
+									<button class="button_letter button_more_options_star" id="letterbutton">MORE OPTIONS</button>
+									<div id="selector_box_star_mover">
+										<small><i><i class="fas fa-arrow-down"></i> Click for store page <i class="fas fa-arrow-down"></i></i></small>
+										<b>$49.00</b>
+										<a href="file:///Users/andrewpenn/Desktop/home%20garden%20website%20/products/star/product_three_star.html"><button class="more_options_button" id="more_op_button_changer">STORE PAGE</button></a>
+									</div>
+								</div>
+
+								<div id="cube_sides" class="cube_face_back"></div>
+								<div id="cube_sides" class="cube_face_right"></div>
+								<div id="cube_sides" class="cube-face_top"></div></a>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+
+
+
+
+			
+					<!---CALIFORNIA-->
+				<a href="file:///Users/andrewpenn/Desktop/home%20garden%20website%20/products/california/product_cali.html"><div class="col-md-3" id="numberbanner">
+					<div class="product_number_overlay">
+						<div class="scene">
+							<div class="cube" id="thatguy">
+								<div id="cube_sides" class="cube_face_front">
+									<img class="cube_pictures" src="images/california.jpg">
+								</div>
+
+								<div id="cube_sides" class="cube_face_bottom"></div>
+
+								<div id="cube_sides" class="cube_face_left">
+									<h3 class="section_four_title">Redwood Succulent Star Planter Kit</h3></a>
+									<button class="button_letter button_more_options_number" id="letterbutton">MORE OPTIONS</button>
+									<div id="selector_box_number_mover">
+										<small><i><i class="fas fa-arrow-down"></i> Click for store page <i class="fas fa-arrow-down"></i></i></small>
+										<b>$139.00</b>
+										<a href="file:///Users/andrewpenn/Desktop/home%20garden%20website%20/products/california/product_cali.html"><button class="more_options_button" id="more_op_button_changer">STORE PAGE</button></a>
+									</div>
+								</div>
+
+								<div id="cube_sides" class="cube_face_back"></div>
+								<div id="cube_sides" class="cube_face_right"></div>
+								<div id="cube_sides" class="cube-face_top"></div></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+</section>
+<!---------------------------------------->
+
+
+
+
+<!---------------------ELEVENTH SECTION - "FOOTER"------------------------->
+<hr style="width:100%;">
+<footer>
+	<div class="container-fluid">
+		<div class="row">
+
+			<div class="col-md-3 column">
+				<img class="footer_logo_phoenix" src="images/footer_logo.jpg">
+				<br>
+				<br>
+				<p>123 Cactus Drive,<br>
+				Phoenix, AZ 85010</p>
+				<br>
+				<p>1-888-555-5555</p>
+				<br>
+				<a href="https://twitter.com/?lang=en-gb"><i class="fab fa-twitter"></i></a>
+				<a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+				<a href="https://www.youtube.com/?gl=GB&hl=en-GB"><i class="fab fa-youtube"></i></a>
+				<a href="https://www.pinterest.co.uk/"><i class="fab fa-pinterest"></i></a>
+				<a href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram"></i></a>
+			</div>
+
+
+			<div class="col-md-3 column" id="quick_links_links">
+				<h6 class="footer_titles">Quick Links</h6>
+				<ul>
+					<a href=""><li><p>Plants</p></li></a>
+					<a href=""><li><p>Services</p></li></a>
+					<a href=""><li><p>Search</p></li></a>
+					<a href=""><li><p>The Garden Blog</p></li></a>
+					<a href=""><li><p>Contact Us</p></li></a>
+				</ul>
+			</div>
+			<div class="col-md-3 column" id="quick_links_specialties">
+				<ul>
+					<h6 class="footer_titles">Our Specialties</h6>
+					<a href=""><li><p>DIY Plant + Herb Kits</p></li></a>
+					<a href=""><li><p>Garden Consultations</p></li></a>
+					<a href=""><li><p>Plant Rescue</p></li></a>
+					<a href=""><li><p>Replanting Service</p></li></a>
+					<a href=""><li><p>Workshops</p></li></a>
+				</ul>
+			</div>
+			<div class="col-md-3 column">
+				<h6 class="footer_titles">Theme Info</h6>
+				<p>This is a demonstration shop for the shopify Artisan theme by <a href="">Out of the sandbox</a>. Products are graciously supplied by <a href="">Lulu & Angle</a> and <a href="">Succulent Gardens</a></p>
+			</div>
+
+		</div>
+	</div>
+
+
+</footer>
+<hr style="width:100%;">
+<!---------------------------------------------->
+ <!-- Optional JavaScript -->
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="product_heart.js"></script>
+
+	
+
+</body>
+</html>
